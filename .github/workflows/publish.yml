@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Deno
+        run: |
+          curl -fsSL https://deno.land/install.sh | sh
+          echo "DENO_INSTALL=$HOME/.deno" >> $GITHUB_ENV
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+
       - name: Install dependencies
         run: npm install
 
