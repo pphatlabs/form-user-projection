@@ -27,5 +27,9 @@ jobs:
       - name: Build package
         run: npm run build
 
+      - name: Prepare for publishing
+        run: |
+          deno run -A scripts/prepare.ts # Example script to ensure files are ready
+
       - name: Publish package
         run: npx jsr publish

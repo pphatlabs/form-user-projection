@@ -8,5 +8,8 @@
     "strict": true,
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "**/*.test.ts"]
+  "exclude": [],
+  "publish": {
+    "exclude": ["!build/esm/**"]
+  }
 }
