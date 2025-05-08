@@ -10,6 +10,6 @@
   "include": ["src/**/*.ts"],
   "exclude": [],
   "publish": {
-    "exclude": ["!build/esm/**"]
+    "exclude": []
   }
 }
