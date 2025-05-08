@@ -5,7 +5,9 @@
   "license": "MIT",
   "entry": "./src/index.ts",
   "exports": {
-    "./bundle": "./dist/bundle.js"
+    ".": "./build/esm/index.js",
+    "./esm": "./build/esm/index.js",
+    "./cjs": "./build/cjs/index.js"
   },
   "type": "module",
   "compilerOptions": {
