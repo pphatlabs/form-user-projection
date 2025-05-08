@@ -1,6 +1,6 @@
 {
   "name": "@pphatdev/user-form-protection",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.1",
   "description": "Utility functions for input validation and formatting in web forms. Supports English, Khmer, numeric inputs, and Cambodian phone number formatting. Designed as event handlers to ensure inputs meet specific rules in web applications.",
   "license": "MIT",
   "entry": "./src/index.ts",
