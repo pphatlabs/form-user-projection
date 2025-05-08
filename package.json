@@ -4,7 +4,8 @@
   "description": "Utility functions for input validation and formatting in web forms. Supports English, Khmer, numeric inputs, and Cambodian phone number formatting. Designed as event handlers to ensure inputs meet specific rules in web applications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "deno run -A build.ts"
   },
   "repository": {
     "type": "git",
