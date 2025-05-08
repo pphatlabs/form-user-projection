@@ -2,6 +2,14 @@
  * Filters input to allow only English characters, numbers, and basic punctuation
  * @param {Event} e - The input event object
  * @returns {string} The filtered input value
+ * @example
+ * import { fieldEN } from '@pphatdev/khmer-input-filter';
+ *
+ * const englishInput = document.getElementById('englishInput');
+ * englishInput.addEventListener('input', fieldEN);
+ * englishInput.addEventListener('paste', fieldEN);
+ *
+ * @module
  */
 export const fieldEN = (e: Event): string => {
     e.preventDefault();
@@ -18,6 +26,14 @@ export const fieldEN = (e: Event): string => {
 * Filters input to allow only Khmer characters and basic punctuation
 * @param {Event} e - The input event object
 * @returns {string} The filtered input value
+* @example
+* import { fieldKH } from '@pphatdev/khmer-input-filter';
+*
+* const khmerInput = document.getElementById('khmerInput');
+* khmerInput.addEventListener('input', fieldKH);
+* khmerInput.addEventListener('paste', fieldKH);
+*
+* @module
 */
 export const fieldKH = (e: Event): string => {
     e.preventDefault();
@@ -34,6 +50,14 @@ export const fieldKH = (e: Event): string => {
 * Filters input to allow only numbers and basic punctuation
 * @param {Event} e - The input event object
 * @returns {string} The filtered input value
+* @example
+* import { fieldNumber } from '@pphatdev/khmer-input-filter';
+*
+* const numberInput = document.getElementById('numberInput');
+* numberInput.addEventListener('input', fieldNumber);
+* numberInput.addEventListener('paste', fieldNumber);
+*
+* @module
 */
 export const fieldNumber = (e: Event): string => {
     e.preventDefault();
@@ -54,6 +78,14 @@ export const fieldNumber = (e: Event): string => {
 * fieldPhone({target: {value: "12345678"}})
 * @returns {string} Formatted phone number starting with '0' and following the pattern "000 000 000" or "000 000 0000"
 * @returns {string} "0" if no value is provided
+* @example
+* import { fieldPhone } from '@pphatdev/khmer-input-filter';
+*
+* const phoneInput = document.getElementById('phoneInput');
+* phoneInput.addEventListener('input', fieldPhone);
+* phoneInput.addEventListener('paste', fieldPhone);
+*
+* @module
 */
 export const fieldPhone = (e: Event): string => {
     const target = e.target as HTMLInputElement;
