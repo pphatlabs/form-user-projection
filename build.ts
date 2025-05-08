@@ -1,9 +1,8 @@
-// filepath: /workspaces/form-user-projection/build.ts
 import { build } from "https://deno.land/x/dnt/mod.ts";
 
 await build({
   entryPoints: ["./src/index.ts"],
-  outDir: "./dist",
+  outDir: "./build",
   shims: {
     deno: true,
   },
@@ -22,11 +21,10 @@ await build({
     homepage: "https://github.com/pphatlabs/user-form-protection#readme",
   },
   compilerOptions: {
-    outFile: "./dist/bundle.js",
-    lib: ["dom", "esnext"], // Add DOM and ESNext libraries
+    lib: ["dom", "esnext"],
   },
 });
 
 // Post-build steps
-Deno.copyFileSync("README.md", "dist/README.md");
-Deno.copyFileSync("LICENSE", "dist/LICENSE");
+Deno.copyFileSync("README.md", "build/README.md");
+Deno.copyFileSync("LICENSE", "build/LICENSE");
