@@ -1,0 +1,19 @@
+{
+  "name": "form-user-projection",
+  "version": "0.1.0",
+  "description": "# Form User Projection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pphatlabs/user-form-protection.git"
+  },
+  "author": "pphatdev <pphat.kits@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pphatlabs/user-form-protection/issues"
+  },
+  "homepage": "https://github.com/pphatlabs/user-form-protection#readme"
+}
