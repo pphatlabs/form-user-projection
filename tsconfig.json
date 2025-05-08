@@ -1,0 +1,12 @@
+/// <reference types="deno" />
+
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["dom", "esnext", "es2015"],
+    "strict": true,
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
