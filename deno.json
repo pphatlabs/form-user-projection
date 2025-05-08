@@ -7,7 +7,7 @@
   "exports": {
     ".": "./build/esm/index.js",
     "./esm": "./build/esm/index.js",
-    "./cjs": "./build/cjs/index.js"
+    "./cjs": "./build/script/index.js"
   },
   "type": "module",
   "compilerOptions": {

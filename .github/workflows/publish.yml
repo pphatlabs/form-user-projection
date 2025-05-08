@@ -21,15 +21,14 @@ jobs:
           echo "DENO_INSTALL=$HOME/.deno" >> $GITHUB_ENV
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
 
-      - name: Install dependencies
-        run: npm install
+      - name: Cache Deno dependencies
+        run: deno cache deps.ts
 
       - name: Build package
-        run: npm run build
+        run: deno task build
 
       - name: Prepare for publishing
-        run: |
-          deno run -A build.ts
+        run: deno run -A build.ts
 
       - name: Publish package
-        run: npx jsr publish
+        run: deno run -A publish.ts
