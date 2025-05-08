@@ -1,4 +1,9 @@
 {
+  "name": "@pphatdev/user-form-protection",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "type": "module",
   "compilerOptions": {
     "lib": ["dom", "esnext", "es2015", "deno.ns"]
   },
